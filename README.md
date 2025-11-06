@@ -1,73 +1,84 @@
-SauceDemo UI Automation Tests
+# 🧪 SauceDemo UI Tests (Playwright + JavaScript)
 
-Automated UI tests for https://www.saucedemo.com
-built with JavaScript + Playwright, following the Page Object Model (POM) design pattern.
+This project contains automated **UI tests** for [https://www.saucedemo.com](https://www.saucedemo.com)  
+written in **JavaScript** using **Playwright** and the **Page Object Model (POM)** pattern.
 
-Overview
+---
 
-Framework: Playwright
-Language: JavaScript (ESM)
-Architecture: Page Object Model
-Execution: Local via npm
-Reports: Playwright HTML Report
-Linting: ESLint
-Formatting: Prettier
-Environment variables: .env with .env.example
+## ⚙️ Setup
 
-Setup & Installation
-
-Clone the repository
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/<your_username>/saucedemo-js-playwright-tests.git
 cd saucedemo-js-playwright-tests
+```
 
-Install dependencies
+### 2️⃣ Install dependencies
+```bash
 npm install
+```
 
-Environment setup (.env configuration)
+### 3️⃣ Configure environment variables
+Copy `.env.example` to `.env`:
+```bash
+cp .env.example .env
+```
 
-This project uses dotenv to store and load environment variables.
+---
 
-You already have an example file:
-📄 .env.example
+## ▶️ Run Tests
 
-Create your local .env file:
-You can either manually create it or copy from the example
-
-⚠️ The .env file is ignored by Git — each developer can have their own configuration.
-
-Run tests
 Run all tests:
+```bash
 npm run test
+```
 
-Run a single test:
+Run specific test:
+```bash
 npx playwright test tests/login.test.js
+```
 
 Run tests in UI mode:
-npm run ui
+```bash
+npx playwright test --ui
+```
 
-Show HTML report:
+Show test report:
+```bash
 npm run report
+```
 
-Available npm scripts
-| Command | Description |
-| ---------------- | ------------------------------- |
-| `npm run test` | Run all Playwright tests |
-| `npm run ui` | Run tests in Playwright UI mode |
-| `npm run report` | Open last HTML report |
-| `npm run lint` | Run ESLint with auto-fix |
+---
 
-Features
+## 📸 Test Artifacts
 
-✅ Modular Page Object Model (POM)
+- **Screenshots:** captured on failure  
+- **Videos:** recorded on failure  
+- **HTML report:** generated automatically after each run
 
-✅ Environment-based configuration with .env and .env.example
+---
 
-✅ Screenshots & video on failure
+## 🧩 Features
 
-✅ HTML report with test results
+- Login and logout tests  
+- Cart and product actions  
+- Sorting and filtering tests  
+- Error validation (locked user, empty fields)  
+- Environment-based configuration (`.env`)  
+- ESLint + Prettier integration  
 
-✅ Reusable locators and test data
+---
 
-✅ ESLint + Prettier integration
+## 👩‍💻 Tech Stack
 
-✅ Cross-browser support: Chromium, Firefox, WebKit
+- Playwright  
+- JavaScript (ESM)  
+- dotenv  
+- ESLint  
+- Prettier  
+
+---
+
+## 🧾 License
+
+MIT License
