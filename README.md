@@ -1,6 +1,6 @@
 # 🧪 SauceDemo UI Tests (Playwright + JavaScript)
 
-This project contains automated **UI tests** for [https://www.saucedemo.com](https://www.saucedemo.com)  
+This project contains automated **UI tests** for [[https://www.saucedemo.com](https://www.saucedemo.com)  ](https://github.com/AnastasiyaNedbaylik/saucedemo-js-playwright-tests)
 written in **JavaScript** using **Playwright** and the **Page Object Model (POM)** pattern.
 
 ---
@@ -9,7 +9,7 @@ written in **JavaScript** using **Playwright** and the **Page Object Model (POM)
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your_username>/saucedemo-js-playwright-tests.git
+git clone https://github.com/AnastasiyaNedbaylik/saucedemo-js-playwright-tests.git
 cd saucedemo-js-playwright-tests
 ```
 
