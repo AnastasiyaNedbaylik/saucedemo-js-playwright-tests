@@ -31,6 +31,7 @@ You already have an example file:
 
 Create your local .env file:
 You can either manually create it or copy from the example
+
 ⚠️ The .env file is ignored by Git — each developer can have their own configuration.
 
 Run tests
