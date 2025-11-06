@@ -58,9 +58,15 @@ Available npm scripts
 Features
 
 ✅ Modular Page Object Model (POM)
+
 ✅ Environment-based configuration with .env and .env.example
+
 ✅ Screenshots & video on failure
+
 ✅ HTML report with test results
+
 ✅ Reusable locators and test data
+
 ✅ ESLint + Prettier integration
+
 ✅ Cross-browser support: Chromium, Firefox, WebKit
