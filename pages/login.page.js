@@ -1,5 +1,6 @@
 import { expect } from '@playwright/test';
 import { loginPage } from '../locators/login.page.js';
+import { productsPage } from '../locators/products.page.js';
 import { BASE_URL, PRODUCTS_PAGE } from '../configs.js';
 
 export class LoginPage {
@@ -8,6 +9,8 @@ export class LoginPage {
     this.userNameField = page.locator(loginPage.userNameField);
     this.passwordField = page.locator(loginPage.passwordField);
     this.loginButton = page.locator(loginPage.loginButton);
+    this.burgerMenuButton = page.locator(productsPage.burgerMenuButton);
+    this.logoutLink = page.locator(productsPage.logoutLink);
     this.errorMessageLockedUser = page.locator(
       loginPage.errorMessageLockedUser
     );
@@ -37,6 +40,14 @@ export class LoginPage {
     await this.clickLoginButton();
   }
 
+  async logout() {
+    await this.burgerMenuButton.click();
+    await this.page.waitForSelector(productsPage.logoutLink, {
+      state: 'visible',
+    });
+    await this.logoutLink.click();
+  }
+
   async assertLoginSuccess() {
     await expect(this.page).toHaveURL(PRODUCTS_PAGE);
     await expect(this.page.locator('.title')).toHaveText('Products');
@@ -45,5 +56,10 @@ export class LoginPage {
   async assertLoginError(expectedText) {
     await expect(this.errorMessageLockedUser).toBeVisible();
     await expect(this.errorMessageLockedUser).toHaveText(expectedText);
+  }
+
+  async assertLogoutSuccess() {
+    const loginButton = this.page.locator(loginPage.loginButton);
+    await expect(loginButton).toBeVisible();
   }
 }
