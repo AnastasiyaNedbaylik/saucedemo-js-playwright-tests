@@ -15,7 +15,7 @@ Formatting: Prettier
 Environment variables: .env with .env.example
 
 Setup & Installation
-1️⃣ Clone the repository
+Clone the repository
 git clone https://github.com/<your_username>/saucedemo-js-playwright-tests.git
 cd saucedemo-js-playwright-tests
 
