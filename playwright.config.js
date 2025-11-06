@@ -8,7 +8,7 @@ export default defineConfig({
     baseURL: process.env.BASE_URL,
     headless: true,
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    //video: 'retain-on-failure',
   },
   reporter: [['html', { open: 'never' }]],
 });
