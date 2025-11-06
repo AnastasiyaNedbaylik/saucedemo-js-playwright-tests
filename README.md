@@ -1,6 +1,6 @@
 # 🧪 SauceDemo UI Tests (Playwright + JavaScript)
 
-This project contains automated **UI tests** for [[https://www.saucedemo.com](https://www.saucedemo.com)  ](https://github.com/AnastasiyaNedbaylik/saucedemo-js-playwright-tests)
+This project contains automated **UI tests** for [[https://www.saucedemo.com](https://www.saucedemo.com)  ](https://www.saucedemo.com)
 written in **JavaScript** using **Playwright** and the **Page Object Model (POM)** pattern.
 
 ---
